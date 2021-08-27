@@ -11,11 +11,11 @@ export default function SiteListSettings({data, actions, isFocused}: SiteListSet
     function isSiteUrlValid(value: string) {
         let url;
         try {
-          url = new URL(value);
+            url = new URL(value);
         } catch (_) {
-          return false;
+            return false;
         }
-        return url.protocol === "http:" || url.protocol === "https:";
+        return url.protocol === 'http:' || url.protocol === 'https:';
     }
 
     return (
